@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(wallpaper.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Gloria Hallelujah", sans-serif;
+    height: 100%;
+}
+
+
+nav{
+    background-color: rgb(234, 179, 188);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a, nav  img{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #453c3c;
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+nav img{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+nav a:hover{
+    background-color: rgb(206, 161, 168);
+    text-decoration: underline;
+}
+
+nav a:active{
+    color: rgb(237, 185, 194);
+    background-color: rgb(69, 60, 60);
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-weight: 800;
+}
+
+.logo{
+    background-color: rgb(219, 152, 163);
+}
+
+.logo:hover{
+    background-color: rgb(206, 161, 168);
+    text-decoration: underline; 
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgb(206, 161, 168);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.headtxt{
+	text-align:center;
+	margin: 0 auto 60px;
+	position: relative;
+	line-height: 60px;
+	color: #ffffff;
+	box-shadow: 10px 1px 10px rgb(219, 152, 163);
+	background-color: rgb(219, 152, 163);
+}
+
+.headtxt::after{
+	content:'';
+	background: #ffffff;
+	width: 100%;
+	height: 2px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 10px 1px 10px #ffffff;
+}
+
+.headtxt2{
+	text-align:center;
+	margin: 0 auto 60px;
+	position: relative;
+	line-height: 60px;
+	color: #ffffff;
+	box-shadow: 10px 1px 10px rgb(219, 152, 163);
+	background-color: rgb(219, 152, 163);
+}
+
+
+.headtxt2::after{
+	content:'';
+	background: #ffffff;
+	width: 100%;
+	height: 2px;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 10px 1px 10px #ffffff;
+}
+
+.headtxt3{
+	text-align:center;
+	margin: auto;
+	position: relative;
+	line-height: 60px;
+	color: #ffffff;
+	box-shadow: 10px 1px 10px rgb(219, 152, 163);
+	background-color: rgb(219, 152, 163);
+}
+
+.headtxt3::after{
+	content:'';
+	background: #ffffff;
+	width: 100%;
+	height: 2px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 10px 1px 10px #ffffff;
+}
+
+.headtxt4{
+	text-align:center;
+	margin: 0 0 60px;
+	position: relative;
+	line-height: 60px;
+	color: #ffffff;
+	box-shadow: 10px 1px 10px rgb(219, 152, 163);
+	background-color: rgb(219, 152, 163);
+}
+
+.headtxt4::after{
+	content:'';
+	background: #ffffff;
+	width: 100%;
+	height: 2px;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 10px 1px 10px #ffffff;
+}
+
+
+.pns-container {
+    display: flex;
+    justify-content: space-around;
+	color: #2f2d2e;
+    flex-wrap: wrap; 
+}
+
+.prodnserv {
+    text-align: center;
+    margin: 10px;
+    width: 200px; 
+	transition: transform 0.5s;
+	box-shadow: 0px 0px 10px rgb(219, 152, 163);
+	padding: 5px;
+}
+
+.prodnserv img {
+    width: 100%;
+    height: auto;
+}
+
+.prodnserv-info {
+    margin-top: 2px;
+}
+
+.prodnserv-info h3 {
+    margin: auto;
+    font-size: 14px;
+	color: #2f2d2e;
+	text-shadow: 1px 1px 3px rgb(47, 45, 46, 0.2);
+}
+
+.prodnserv-info p {
+    margin: auto;
+    font-size: 1em;
+    color: rgb(219, 152, 163); 
+	text-shadow: 1px 1px 5px rgb(210, 100, 182, 0.2);
+}
+
+.prodnserv:hover{
+	transform: translateY(-5px);
+}
+
+.pbutton {
+    padding: 15px;
+    background-color: rgb(219, 152, 163);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-family: "Gloria Hallelujah", sans-serif;
+	box-shadow: 10px 1px 10px #ffffff;
+	transition: transform 0.5s;
+}
+
+.pbutton:hover{
+	transform: translateY(-5px);
+	    background-color: #ffffff;
+    color: rgb(219, 152, 163);
+}
+
+.serv-container {
+    display: flex;
+    justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+
+.serv {
+    text-align: center;
+    margin: 10px;
+    width: 1000px; 
+	padding: 20px;
+	color:  rgb(219, 152, 163);
+	border-radius: 2px;
+	box-shadow: 0px 0px 10px rgb(219, 152, 163);
+	margin-bottom: 50px;
+}
+
+.serv img {
+    width: 100%;
+    height: auto;
+	margin-bottom: 15px;
+}
+
+
+
+
+.faku {
+	background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+.rev-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+	margin: 40px;
+}
+
+.rev {
+    text-align: center;
+    margin: 10px;
+    width: 400px; 
+	padding: 5px;
+}
+
+.rev img {
+    width: 100%; 
+    border: 2px solid #333;
+    box-sizing: border-box; 
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #555;
+}
+
+
+
+
+
+
+
+.sprice-container {
+    display: flex;
+    justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.sprice {
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px #ffffff;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	text-align: center;
+    margin: 20px;
+    width: 1000px; 
+	color:  rgb(219, 152, 163);
+	border-radius: 2px;
+	box-shadow: 0px 0px 10px rgb(219, 152, 163);
+}
+
+.sprice table {
+    width: 50%;
+    margin: 0 auto; 
+}
+.sprice h1 {
+	padding: 10px;
+}
+
+.sprice p {
+	margin: auto;
+	font-size: 1em;
+}

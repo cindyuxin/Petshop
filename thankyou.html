@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <title>Document</title>
+
+
+    <style>
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            margin-top: 90px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="logo">The Paw palace<img src="images/logo.png" alt="logo"></a> 
+            </li>
+            <li class="hideOnMobile">                        
+                <a href="pawp2.html" class="sevice">Services</a> 
+            </li>
+            <li class="hideOnMobile">
+                <a href="feedback.html" class="feedback">Feedback</a> 
+            </li>
+            <li class="hideOnMobile">
+                <a href="Aboutus.html" class="about">About</a> 
+            </li>
+            <li class="hideOnMobile">
+                <a href="orderform.html" class="order"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#453c3c"><path d="m480-560-56-56 63-64H320v-80h167l-64-64 57-56 160 160-160 160ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg></a> 
+            </li>
+            <li onclick=showSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#453c3c"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul> 
+        
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> 
+            </li>
+            <li>
+                <a href="index.html" class="home">Home</a> 
+            </li>
+            <li>                        
+                <a href="pawp2.html" class="sevice">Services</a> 
+            </li>
+            <li>
+                <a href="orderform.html" class="order">Order</a> 
+            </li>
+            <li>
+                <a href="feedback.html" class="feedback">Feedback</a> 
+            </li>
+            <li>
+                <a href="Aboutus.html" class="about">About</a> 
+            </li>
+        </ul> 
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <!----------thank you---------------->
+
+    <p>Thank you for submitting the form;)</p>
+</body>
+</html>

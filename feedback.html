@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Feedback</title>
+
+    <style>
+            header{
+                font-size: 50px;
+                text-align: center;
+                text-shadow: 3px 5px rgba(0,0,0,0.2) ;
+            }
+
+            .feedback-form {
+                font-family: 'Times New Roman', Times, serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%; 
+                min-height: 100%;
+            }
+
+            form {
+                width: 70%; 
+                padding: 25px;
+                margin-bottom: 20px;
+                background: rgba(219, 133, 133, 0.9);
+                box-shadow: 5px 5px 5px rgba(0,5,0,0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .header {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            textarea {
+                background-color: #f1caca;
+                font-family: 'Julius Sans One', sans-serif;
+                outline: none;
+                height: 200px;
+                width: 100%;
+                border: solid 1px #8c8c8c;
+                border-left: none;
+                border-right: none;
+            }
+
+            textarea:active {
+                background-color: #b79191;
+                color: #f2f2f2;
+            }
+
+            input[type=submit] {
+                margin-left: 150%;
+                width: 60px;
+                height: 25px;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+
+                transition: opacity 0.15s;
+            }
+
+            input[type=submit]:hover {
+                color: rgb(255, 255, 255);
+                background-color: #ccb7b7;
+                opacity: 0.7;
+            }
+
+            input[type=submit]:active {
+                opacity: 0.5;
+            }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="logo">The Paw palace<img src="images/logo.png" alt="logo"></a> 
+            </li>
+            <li class="hideOnMobile">                        
+                <a href="pawp2.html" class="sevice">Services</a> 
+            </li>
+            <li class="hideOnMobile">
+                <a href="feedback.html" class="feedback">Feedback</a> 
+            </li>
+            <li class="hideOnMobile">
+                <a href="Aboutus.html" class="about">About</a> 
+            </li>
+            <li class="hideOnMobile">
+                <a href="orderform.html" class="order"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#453c3c"><path d="m480-560-56-56 63-64H320v-80h167l-64-64 57-56 160 160-160 160ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/></svg></a> 
+            </li>
+            <li onclick=showSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#453c3c"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul> 
+        
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#" class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> 
+            </li>
+            <li>
+                <a href="index.html" class="home">Home</a> 
+            </li>
+            <li>                        
+                <a href="pawp2.html" class="sevice">Services</a> 
+            </li>
+            <li>
+                <a href="orderform.html" class="order">Order</a> 
+            </li>
+            <li>
+                <a href="feedback.html" class="feedback">Feedback</a> 
+            </li>
+            <li>
+                <a href="Aboutus.html" class="about">About</a> 
+            </li>
+        </ul> 
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+    <div class="feedback-form">
+        <header>Customer Feedback Form</header>
+        <form target="_blank" method="get" action="thankyou.html">
+            <table class="form" >
+                <tr>
+                    <td rowspan="2" class="header">Rate our service:</td>
+                    <td>
+                        <input type="checkbox" name="rate" id="poor">Poor
+                        <input type="checkbox" name="rate" id="good">Good
+                        <input type="checkbox" name="rate" id="excellent" class="excellent">Excellent
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="number">Choose from 1 to 5, how satisfactory was our service?</label>
+                        <br/>
+                        1
+                        <input type="range" name="range" id="number" max="5" min="1">
+                        5
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="header">Give some feedback:</td>
+                    <td><textarea id="message" type="text" placeholder="Message..."></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>        
+        </form>
+    </div>    
+    
+</body>
+</html>
